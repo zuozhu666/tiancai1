@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天才的网页</title>
+    <script>
+        function validateAndRedirect(){
+            var role = document.getElementById("role");
+            var username = document.getElementById("name");
+            if( role.value === "佐助"){
+                if(username.value === "高若情"){
+                    window.location.href = "https://zuozhu666.github.io/Agiftforgaoruoqing/";
+                    alert("验证成功")
+                }else{
+                alert("名字好像输错了，不用谦虚哦");
+                }
+            }else{
+                alert("我难道长的不像佐助吗?");
+            }
+        }
+    </script>
+    <style>
+        h1 {
+            color:blue;
+            text-align: center;
+        }
+        p{
+            color:chocolate;
+            font-size: 20px;
+            font-style: italic;
+        }
+        p span{
+            color:blueviolet;
+            font-size: 30px;
+        }
+        .zuozhu{
+           font-style: italic;
+           font-size: 30px;
+           text-indent: -1050px;
+        }
+        .daitu{
+            font-style: italic;
+            font-size: 30px;
+            text-indent:155px;
+        }
+        .ban{
+            font-style: italic;
+            font-size: 30px;
+            text-indent:-630px;
+
+        }
+        .kakaxi{
+            font-style: italic;
+            font-size: 30px;
+            text-indent:-250px;
+        }
+        .yanzheng{
+            text-indent: 0%;
+            font-size: 20px;
+        }
+        .nb {
+            text-indent: 3px;
+            font-size: 25px;
+            
+        }
+        input:hover{
+            background-color:aqua;
+        }
+        .n{
+            font-size: 20px;
+        }
+        div{
+            text-align: center;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body> 
+     <h1>欢迎来到天才创建的网站</h1>
+     <p><span>PS:</span>这个网站和验证完之后出现的网站是我专门做的送给你的礼物，希望你会喜欢(验证成功后记得点击确定哦！)</p>
+     <i class="n">验证一：</i>
+     <form onsubmit="event.preventDefault(); validateAndRedirect();">
+      <table>
+        <tr>
+            <td class="nb">名&nbsp;&nbsp;字:</td>
+            <td class="a"><input class="nb"  type="text" id="name" placeholder="美丽的女士，你的名字是："></td>
+        </tr>
+      </table>
+       <br><br>
+      <i class="n">验证二(请从下面的图片中选出天才的照片):</i>
+        <table>
+            <tr>
+                <td>
+                    <input type="radio"  name="role" value="daitu"><img src="\tiancai1\带土.jpeg" alt="图片走丢了" width="380px" height="230px">
+                    <input type="radio" id="role" name="role" value="佐助"><img src="\tiancai1\佐助.jpg"  alt="图片走丢了" width="380px" height="230px">
+                    <input type="radio"  name="role" value="ban"><img src="\tiancai1\斑.jpeg"  alt="图片走丢了" width="380px" height="230px">
+                    <input type="radio"  name="role" value="kakaxi"><img src="\tiancai1\卡卡西.jpg"  alt="图片走丢了" width="380px" height="230px">
+                </td>
+            </tr>
+            <tr>
+                <td class="daitu">带&nbsp;&nbsp;&nbsp;土</td>
+                <td class="zuozhu">佐&nbsp;&nbsp;&nbsp;助</td>
+                <td class="ban">斑</td>
+                <td class="kakaxi">卡&nbsp;卡&nbsp;西</td>
+            </tr>  
+        </table>
+        <div>
+            <br>
+            <input class="yanzheng" type="submit" value="确认完毕请点击这里验证" >
+        </div>
+    </from>
+</body>
+</html>
